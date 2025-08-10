@@ -98,18 +98,18 @@
     },
     {
       "id": 13,
-      "name": "Isabella White",
-      "skills": ["Data Science", "Python", "Pandas"],
-      "experience_years": 4,
-      "projects": ["Recommendation System", "Fraud Detection"],
-      "availability": "on leave"
+      "name": "Dr. Sarah Chen",
+      "skills": ["Machine Learning", "TensorFlow", "PyTorch", "Python", "Medical Data Processing"],
+      "experience_years": 6,
+      "projects": ["Medical Diagnosis Platform", "X-ray Analysis System"],
+      "availability": "available"
     },
     {
       "id": 14,
-      "name": "Christopher Harris",
-      "skills": ["Machine Learning", "TensorFlow", "PyTorch"],
-      "experience_years": 6,
-      "projects": ["Image Recognition", "NLP Chatbot"],
+      "name": "Michael Rodriguez",
+      "skills": ["Machine Learning", "scikit-learn", "pandas", "Python", "Healthcare Data"],
+      "experience_years": 4,
+      "projects": ["Patient Risk Prediction System", "Electronic Health Records Platform"],
       "availability": "available"
     },
     {

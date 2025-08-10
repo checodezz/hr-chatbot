@@ -43,11 +43,16 @@ class QueryRequest(BaseModel):
     k: Optional[int] = 5  # Number of results to return
     filter_availability: Optional[str] = None  # "available", "on leave", "on project"
     min_experience: Optional[int] = None
+    system_prompt: Optional[str] = None  # Custom system prompt
 
 class QueryResponse(BaseModel):
     query: str
     llm_response: str
     sources: List[str]  # keep track of where info came from
+
+class CustomPromptRequest(BaseModel):
+    query: str
+    system_prompt: str
 
 @app.get("/")
 async def root():
@@ -69,8 +74,13 @@ async def health_check():
 @app.post("/query", response_model=QueryResponse)
 async def query_employees(request: QueryRequest):
     try:
-        # Call the LangChain RAG chain
-        llm_answer, source_docs = run_query(request.query, rag_chain)
+        # Create RAG chain with custom system prompt if provided
+        if request.system_prompt:
+            custom_rag_chain = get_rag_chain(vector_store, system_prompt=request.system_prompt)
+            llm_answer, source_docs = run_query(request.query, custom_rag_chain)
+        else:
+            # Use default RAG chain
+            llm_answer, source_docs = run_query(request.query, rag_chain)
 
         # Convert source documents to strings for the API output
         sources_list = [doc.page_content for doc in source_docs]
@@ -111,6 +121,18 @@ async def get_employees_by_skill(skill: str, available_only: bool = False):
         k=20
     )
     return await query_employees(request)
+
+@app.post("/query/custom-prompt")
+async def query_with_custom_prompt(request: CustomPromptRequest):
+    """
+    Query endpoint that accepts a custom system prompt.
+    Useful for testing different response formats and behaviors.
+    """
+    query_request = QueryRequest(
+        query=request.query,
+        system_prompt=request.system_prompt
+    )
+    return await query_employees(query_request)
 
 if __name__ == "__main__":
     import uvicorn
