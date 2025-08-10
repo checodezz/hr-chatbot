@@ -1,0 +1,244 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "skills": ["Python", "React", "AWS"],
+      "experience_years": 5,
+      "projects": ["E-commerce Platform", "Healthcare Dashboard"],
+      "availability": "available"
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "skills": ["Java", "Spring Boot", "Docker"],
+      "experience_years": 7,
+      "projects": ["Banking System", "Payment Gateway"],
+      "availability": "on leave"
+    },
+    {
+      "id": 3,
+      "name": "Sarah Williams",
+      "skills": ["JavaScript", "Node.js", "MongoDB"],
+      "experience_years": 3,
+      "projects": ["Social Media App", "Chat Application"],
+      "availability": "available"
+    },
+    {
+      "id": 4,
+      "name": "David Kim",
+      "skills": ["C#", ".NET", "Azure"],
+      "experience_years": 6,
+      "projects": ["ERP System", "Inventory Management"],
+      "availability": "available"
+    },
+    {
+      "id": 5,
+      "name": "Emily Rodriguez",
+      "skills": ["Python", "Django", "PostgreSQL"],
+      "experience_years": 4,
+      "projects": ["CMS Platform", "Blog System"],
+      "availability": "on project"
+    },
+    {
+      "id": 6,
+      "name": "James Wilson",
+      "skills": ["Go", "Kubernetes", "GCP"],
+      "experience_years": 8,
+      "projects": ["Microservices Architecture", "CI/CD Pipeline"],
+      "availability": "available"
+    },
+    {
+      "id": 7,
+      "name": "Olivia Brown",
+      "skills": ["React", "Redux", "TypeScript"],
+      "experience_years": 4,
+      "projects": ["Frontend Dashboard", "Admin Panel"],
+      "availability": "available"
+    },
+    {
+      "id": 8,
+      "name": "Robert Taylor",
+      "skills": ["Ruby", "Rails", "MySQL"],
+      "experience_years": 5,
+      "projects": ["Booking System", "Restaurant Management"],
+      "availability": "on leave"
+    },
+    {
+      "id": 9,
+      "name": "Sophia Martinez",
+      "skills": ["Angular", "Firebase", "RxJS"],
+      "experience_years": 3,
+      "projects": ["Real-time Analytics", "Mobile App"],
+      "availability": "available"
+    },
+    {
+      "id": 10,
+      "name": "Daniel Anderson",
+      "skills": ["PHP", "Laravel", "Vue.js"],
+      "experience_years": 6,
+      "projects": ["CRM System", "E-learning Platform"],
+      "availability": "on project"
+    },
+    {
+      "id": 11,
+      "name": "Ava Thomas",
+      "skills": ["Swift", "iOS", "Xcode"],
+      "experience_years": 4,
+      "projects": ["Mobile Banking App", "Fitness Tracker"],
+      "availability": "available"
+    },
+    {
+      "id": 12,
+      "name": "Matthew Jackson",
+      "skills": ["Kotlin", "Android", "Firebase"],
+      "experience_years": 5,
+      "projects": ["E-commerce App", "Ride-sharing App"],
+      "availability": "available"
+    },
+    {
+      "id": 13,
+      "name": "Isabella White",
+      "skills": ["Data Science", "Python", "Pandas"],
+      "experience_years": 4,
+      "projects": ["Recommendation System", "Fraud Detection"],
+      "availability": "on leave"
+    },
+    {
+      "id": 14,
+      "name": "Christopher Harris",
+      "skills": ["Machine Learning", "TensorFlow", "PyTorch"],
+      "experience_years": 6,
+      "projects": ["Image Recognition", "NLP Chatbot"],
+      "availability": "available"
+    },
+    {
+      "id": 15,
+      "name": "Mia Martin",
+      "skills": ["DevOps", "Jenkins", "Terraform"],
+      "experience_years": 5,
+      "projects": ["Infrastructure Automation", "Cloud Migration"],
+      "availability": "on project"
+    },
+    {
+      "id": 16,
+      "name": "Andrew Thompson",
+      "skills": ["Blockchain", "Solidity", "Ethereum"],
+      "experience_years": 3,
+      "projects": ["Smart Contracts", "NFT Marketplace"],
+      "availability": "available"
+    },
+    {
+      "id": 17,
+      "name": "Charlotte Garcia",
+      "skills": ["UI/UX", "Figma", "Adobe XD"],
+      "experience_years": 4,
+      "projects": ["Website Redesign", "Mobile App UI"],
+      "availability": "available"
+    },
+    {
+      "id": 18,
+      "name": "Joshua Martinez",
+      "skills": ["QA Automation", "Selenium", "Cypress"],
+      "experience_years": 5,
+      "projects": ["Test Framework", "CI Integration"],
+      "availability": "on leave"
+    },
+    {
+      "id": 19,
+      "name": "Amelia Robinson",
+      "skills": ["Product Management", "Agile", "Scrum"],
+      "experience_years": 7,
+      "projects": ["Roadmap Planning", "Feature Prioritization"],
+      "availability": "available"
+    },
+    {
+      "id": 20,
+      "name": "Ethan Clark",
+      "skills": ["Technical Writing", "Documentation", "Markdown"],
+      "experience_years": 4,
+      "projects": ["API Docs", "User Manuals"],
+      "availability": "available"
+    },
+    {
+      "id": 21,
+      "name": "Harper Rodriguez",
+      "skills": ["React Native", "Expo", "Mobile Development"],
+      "experience_years": 3,
+      "projects": ["Cross-platform App", "Media Player"],
+      "availability": "on project"
+    },
+    {
+      "id": 22,
+      "name": "Alexander Lewis",
+      "skills": ["Elixir", "Phoenix", "Functional Programming"],
+      "experience_years": 5,
+      "projects": ["Real-time System", "Websocket App"],
+      "availability": "available"
+    },
+    {
+      "id": 23,
+      "name": "Ella Walker",
+      "skills": ["GraphQL", "Apollo", "Hasura"],
+      "experience_years": 4,
+      "projects": ["API Gateway", "Data Federation"],
+      "availability": "available"
+    },
+    {
+      "id": 24,
+      "name": "Benjamin Hall",
+      "skills": ["Rust", "Systems Programming", "WASM"],
+      "experience_years": 6,
+      "projects": ["Performance Optimization", "Blockchain Protocol"],
+      "availability": "on leave"
+    },
+    {
+      "id": 25,
+      "name": "Scarlett Young",
+      "skills": ["Docker", "Kubernetes", "Helm"],
+      "experience_years": 5,
+      "projects": ["Containerization", "Cluster Management"],
+      "availability": "available"
+    },
+    {
+      "id": 26,
+      "name": "Henry Allen",
+      "skills": ["Big Data", "Hadoop", "Spark"],
+      "experience_years": 7,
+      "projects": ["Data Pipeline", "Analytics Platform"],
+      "availability": "available"
+    },
+    {
+      "id": 27,
+      "name": "Lily Hernandez",
+      "skills": ["Cybersecurity", "Penetration Testing", "OWASP"],
+      "experience_years": 5,
+      "projects": ["Security Audit", "Vulnerability Assessment"],
+      "availability": "on project"
+    },
+    {
+      "id": 28,
+      "name": "Sebastian King",
+      "skills": ["Flutter", "Dart", "Mobile UI"],
+      "experience_years": 3,
+      "projects": ["Hybrid App", "E-commerce Mobile"],
+      "availability": "available"
+    },
+    {
+      "id": 29,
+      "name": "Victoria Wright",
+      "skills": ["Salesforce", "Apex", "Lightning"],
+      "experience_years": 4,
+      "projects": ["CRM Customization", "Sales Automation"],
+      "availability": "available"
+    },
+    {
+      "id": 30,
+      "name": "Jack Scott",
+      "skills": ["WordPress", "PHP", "Elementor"],
+      "experience_years": 5,
+      "projects": ["Corporate Website", "Landing Pages"],
+      "availability": "on leave"
+    }
+  ]
+}
