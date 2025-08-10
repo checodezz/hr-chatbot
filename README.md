@@ -18,6 +18,8 @@ A complete RAG (Retrieval-Augmented Generation) pipeline for querying employee d
 git clone <repository-url>
 cd hr-chatbot
 python -m venv venv
+or
+python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
