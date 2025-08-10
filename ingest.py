@@ -50,6 +50,7 @@ def employee_to_document(emp):
     }
     return Document(page_content=content, metadata=metadata)
 
+
 def ingest_employees():
     # Convert employees to documents
     docs = [employee_to_document(emp) for emp in employees]
