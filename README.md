@@ -9,13 +9,33 @@ A complete RAG (Retrieval-Augmented Generation) pipeline for querying employee d
 - 📊 Vector storage with Qdrant
 - 🌐 RESTful API with FastAPI
 - 🔒 Secure environment variable management
+- ⚡ **RAG Pipeline** for context-aware query results
+- 🐳 **Docker Support** for Qdrant setup
+
+
+## Architecture
+
+```
+Data (JSON) → Ingest → Vector Store (Qdrant) → RAG Chain → API (FastAPI)
+```
+
+1. **Data Ingestion**  
+   Employee data is converted to documents and embedded using OpenAI Embeddings.  
+2. **Vector Storage**  
+   Qdrant stores semantic vector embeddings for fast, relevant retrieval.  
+3. **RAG Chain**  
+   LangChain orchestrates retrieval and generation while optimizing token usage.  
+4. **API Layer**  
+   FastAPI exposes endpoints for querying employee data.  
+5. **Sample Dataset**  
+   Provided in the `/data` folder for quick testing.
 
 ## Setup
 
 ### 1. Clone and Install Dependencies
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/checodezz/hr-chatbot
 cd hr-chatbot
 python -m venv venv
 or
@@ -49,7 +69,7 @@ APP_PORT=8000
 ```
 
 ### 3. Start Qdrant
-
+install docker if it is not there in your pc
 Make sure Qdrant is running on your system:
 
 ```bash
@@ -116,13 +136,12 @@ curl -X GET "http://localhost:8000/employees/available"
 | `APP_HOST`          | API server host     | 0.0.0.0       | ❌       |
 | `APP_PORT`          | API server port     | 8000          | ❌       |
 
-## Architecture
 
-```
-Data (JSON) → Ingest → Vector Store (Qdrant) → RAG Chain → API (FastAPI)
-```
 
-1. **Data Ingestion**: Employee data converted to documents with embeddings
-2. **Vector Storage**: Qdrant stores semantic vectors for fast retrieval
-3. **RAG Chain**: LangChain orchestrates retrieval and generation
+1. **Data Ingestion**: Employee data converted to documents with embeddings using openaiEmbeddings api for that you will need openai api key.
+2. **Vector Storage**: Qdrant stores semantic vector embeddings for fast retrieval
+3. **RAG Chain**: LangChain orchestrates retrieval and generation and makes it easier for token management and context awareness
 4. **API Layer**: FastAPI provides RESTful interface
+5. **Sample Dataset provided in the code in the folder named data**: FastAPI provides RESTful interface
+
+
